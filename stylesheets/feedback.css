@@ -1,0 +1,68 @@
+.feedback_header h1{
+    position: relative;
+    top: 60px;
+    text-align: center;
+    color: yellow;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 3px red;
+    border-bottom: 1px solid yellow;
+}
+
+.feedback_sub p{
+    position: relative;
+    color: yellow;
+    top: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+
+input[type=text], select {
+    margin-top: 12px;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: yellow;
+    color: black;
+    padding: 14px 20px;
+    margin-top: 12px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .feedback_form {
+    position: relative;
+    top: 60px;
+    border-radius: 5px;
+    padding: 20px;
+    color: yellow;
+  }
+
+  .feedback_form label{
+      width: 100%;
+  }
+
+  .feedback_form textarea{
+      width: 100%;
+      text-align:start;
+
+  }
+

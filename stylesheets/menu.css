@@ -1,0 +1,88 @@
+.menu_header h1{
+   position: relative;
+   top: 60px;
+   text-align: center;
+   color: yellow;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 50px;
+   text-shadow: 1px 3px red;
+   border-bottom: 1px solid yellow;
+}
+
+.menu_header h2{
+    position: relative;
+    top: 60px;
+    text-align: center;
+    color: yellow;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    text-shadow: 1px 3px red;
+    border-bottom: 1px solid yellow;
+ }
+
+
+
+.menu_section{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    border: 1px solid yellow;
+    height: 100%;
+}
+
+.menu_btn{
+    font-family: 'Open Sans', sans-serif;
+    display: inline;
+    width: 24%;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    background-color: black;
+    color: yellow;
+    border: 0;
+    height: 50px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.menu_btn:hover{
+    font-family: 'Open Sans', sans-serif;
+    background-color: yellow;
+    color: black;
+}
+
+.bottom_border{
+    border-bottom: 1px solid yellow;
+}
+
+.menu_body{
+    background-color: black;
+}
+
+.burger_body{
+    font-family: 'Open Sans', sans-serif;
+    color: yellow;
+}
+
+.burger_body h1{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+}
+
+.burger_body p{
+    color:yellow;
+}
+
+.burger_body img{
+    width: 30%;
+    height: 20%;
+    margin-left: 35%;    
+   
+}
+
+.menu_footer{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+

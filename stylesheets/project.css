@@ -1,0 +1,127 @@
+
+body{
+    background-color:black;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+
+.name{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    margin-left: 25px;
+}
+
+.other{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    float: right;
+    margin-right: 25px;
+}
+
+.nav{
+    background-color: yellow;
+    position:fixed;
+    text-decoration: none;
+    height: 54px;
+    top: 0;
+    width: 100%;
+}
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+.nav a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:black;
+    text-align: center;
+    background-color: yellow;
+    text-decoration: none;
+    padding: 14px 16px; 
+    font-size: 23px;
+}
+.nav a:hover{
+    color: yellow;
+    background-color: black;
+}
+
+.nav a.active{
+    background-color: yellow;
+    color: black;
+}
+
+.section1{
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: black;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 600px;
+}
+
+.section1 iframe{
+    width: 95%;
+    padding-left: 30px;
+    padding-right: 55px
+}
+
+
+.home_image img{
+    width: 1900px;
+    margin-top: 35px;
+}
+
+.section1 h1{
+    text-align: center;
+    margin: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+}
+
+.column{
+    flex: 33.33%;
+    padding: 5px;
+}
+.row{
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .column{
+        width: 100%;
+        padding: 0%;  
+    }
+}
+
+.fa{
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: black;
+    color: yellow;
+  }
+
+  .fa-twitter {
+    background: black;
+    color: yellow;
+  }
+
+  .fa-instagram {
+    background: black;
+    color: yellow;
+  }
+
+
+

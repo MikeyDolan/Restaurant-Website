@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reservations</title>
+        <link rel="stylesheet" href="stylesheets/menu.css">
+        <link rel="stylesheet" href="stylesheets/project.css">
+        <link rel="stylesheet" href="stylesheets/about.css">
+        <link rel="stylesheet" href="stylesheets/feedback.css">
+        <link rel="stylesheet" href="stylesheets/reservations.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="nav">
+                <a href="home.html" class="name">Story Burger</a>
+                <a href="feedback.html" class="other">Feedback</a>
+                <a href="reservations.html" class="other">Reservations</a>
+                <a href="menu.html" class="other">Menu</a>
+                <a href="about.html" class="other">About Us</a>
+            </div>
+    </header>
+
+            <div class="feedback_header">
+                <h1>Reservations</h1>
+            </div>
+
+            
+        <div class="res_sub">
+            <h2>Making a reservation with us is the best way to ensure you find a table! You can contact us at <span class="phone_no">(01) 1234567</span> or use the booking system below.</h2>
+        </div>
+
+        <section class="res">
+            <div>
+                <form action="reservation-confirmation.html" method="get">
+                <input type="text" id="fname" placeholder="First Name">
+                <input type="text" id="lname" placeholder="Last Name">
+                <input class="res_in" id="email" style="width: 96.7%;" type="email" placeholder="Sample@email.com">
+                <input class="res_in" id="phone" style="width: 96.7%;" type="number" placeholder="08512345678">
+                <input class="res_in" id="people" style="width: 96.7%;" type="number" placeholder="How many people?">
+                <input class="res_date_time" id="date" style="width: 46.7%; padding-left: 20px;" type="date"> <input class="res_date_time" id="time" style="width: 49%;" type="time">
+                <button class="res_btn" id="btn" type="submit" onclick="data()">Reserve</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="menu_footer">
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/home?lang=en" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
+            <p style="color: yellow; float: right; margin-right: 40%; display:inline; font-family: sans-serif;"><i>Story Burger Ltd - All rights reserved.</i></p>
+            </footer> 
+
+        <script>
+            function data()
+        {
+            var fname = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone").value; 
+            var people = document.getElementById("people").value; 
+            var date = document.getElementById("date").value; 
+            var time = document.getElementById("time").value;
+
+            localStorage.setItem("fname_data", fname);
+            localStorage.setItem("lname_data", lname);
+            localStorage.setItem("email_data", email);
+            localStorage.setItem("phone_data", phone);
+            localStorage.setItem("people_data", people);
+            localStorage.setItem("date_data", date);   
+            localStorage.setItem("time_data", time); 
+        }
+        </script>
+            
+    </body>
+</html>

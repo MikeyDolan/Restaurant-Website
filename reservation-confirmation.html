@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reservation Confirmation</title>
+        <link rel="stylesheet" href="stylesheets/project.css">
+        <link rel="stylesheet" href="stylesheets/reservations.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stylesheets/menu.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="nav">
+                <a href="home.html" class="name">Story Burger</a>
+                <a href="feedback.html" class="other">Feedback</a>
+                <a href="reservations.html" class="other">Reservations</a>
+                <a href="menu.html" class="other">Menu</a>
+                <a href="about.html" class="other">About Us</a>
+            </div>
+    </header>
+
+
+            <div class="res_sub">
+                <h2>Congragulations, your booking is <span style="text-decoration: underline;">Confirmed</span></h2>
+            </div>
+
+            <div class="confirmation">
+                <span id="fname">Fname </span> <span id="lname">Lname</span>, you have booked a table of <span id="people"> People </span> on the <span id="date">Date</span> at <span id="time">Time</span><br>
+                Your confirmation number is <span id="conf_no"></span><br>
+                See you soon!
+            </div>
+            
+            <footer style="background-color: black; height: 50px; position: absolute; bottom: 10px;">
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/home?lang=en" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/?hl=en" class="fa fa-instagram"></a>
+                </footer>
+
+
+        
+    <script>
+        document.getElementById("fname").innerHTML=localStorage.getItem("fname_data");
+        document.getElementById("lname").innerHTML=localStorage.getItem("lname_data");
+        document.getElementById("people").innerHTML=localStorage.getItem("people_data");
+        document.getElementById("date").innerHTML=localStorage.getItem("date_data");
+        document.getElementById("time").innerHTML=localStorage.getItem("time_data");
+
+        let conf_number = Math.floor((Math.random() * 100000) + 1);
+        document.getElementById("conf_no").innerHTML = conf_number;
+    </script>
+
+    </body>
+</html>
